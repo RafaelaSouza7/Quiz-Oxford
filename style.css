@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(91,30,159,1) 0%, rgba(77,39,182,1) 100%);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  color:black;
+  width: 150%;
+  max-width: 800px;
+  height: 300px;
+
+  border: 2px solid #e1e1e6;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 0 2px 2px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container2{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  
+}
+
+img{
+  width: 35%;
+  margin-bottom:15px;
+  margin-left: 250px;
+}
+
+.img2{
+  width: 35%;
+  margin-bottom: -210px;
+  margin-left: 450px;
+}
+
+.questions-container1, .questions-container2, .questions-container3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  
+}
+
+table{
+  font-size: 24px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 70px;
+  margin-left: 90px;
+}
+
+table th{
+  font-weight: bold;
+  padding: 10px;
+}
+
+table td{
+  margin-top: 100px;
+}
+
+
+
+.questionFirstPlayer, .questionSecondPlayer,.questionThirdPlayer {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.answers-container1, .answers-container2, .answers-container3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+}
+
+.answer1,.answer2,.answer3:disabled {
+  cursor: not-allowed;
+}
+
+.next-question1,.next-question2,.next-question3 {
+  margin-top: 32px;
+}
+
+.button {
+  background: #018fd0;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+  height: 48px;
+  padding: 0 32px;
+  font-family: "Raleway", sans-serif;
+  transition: filter 0.1s;
+  display:flexbox;
+  cursor: pointer
+  
+}
+
+.ranking-quiz{
+  background:#9400D3
+}
+
+.button:not(:disabled):hover {
+  filter: brightness(0.8);
+}
+
+/* Finish game */
+.final-message {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.final-message span {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* General styles */
+.hide {
+  display: none;
+}
+
+.correct {
+  background-color: #32CD32;
+}
+
+.incorrect {
+  background-color: #ec5353;
+}
